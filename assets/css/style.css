@@ -1,0 +1,87 @@
+:root {
+    --backgroundcolor: #FFF9FB;
+    --questionboxcolor: #3B1C32;
+    --choicetextcolor: #D3D4D9;
+    --headertextcolor: #4B88A2;
+    --questioncolor: #5C573E;
+}
+
+* {
+    font-family: 'PlayfairDisplay';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display:flex;
+    align-content: flex-start;
+    background-color: var(--backgroundcolor);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    flex-flow: wrap;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 36px 12px 36px;
+    font-size: 24px;
+    color: var(--headertextcolor);
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100px;
+}
+
+#titletext {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-flow: wrap;
+    flex-direction: row;
+    margin: 1%;
+    padding: 0.5%;
+    width: 100%;
+}
+
+h2 {
+    display:flex;
+    flex: 1 1 100%;
+    color: var(--questioncolor);
+    flex-flow: wrap;
+    font-size: 32px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#choicebox {
+    display:flex;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+
+section ul {
+    display:flex;
+    flex: 1 1 50%;
+    flex-flow: wrap;
+}
+
+section ul b {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex: 1 1 50%;
+    color: var(--choicetextcolor);
+    background-color: var(--questionboxcolor);
+}
