@@ -7,46 +7,43 @@ This website contains a timed multiple choice quiz for evaluating knowledge on J
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A
 
 ## Usage
 
-To use the quiz, press the start button and answer the multiple choice questions
+To use the quiz, press the start button and answer the multiple choice questions.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![Start screen for Javascript Quiz](assets/images/Start.png)
 
-![alt text](assets/images/screenshot.png)
+The screen should be redirected to the first question. Answer the question by selecting the choice that best fits the question text.
+
+![Multiple choice screen](assets/images/Question.png)
+
+Each question that is answered incorrectly will subtract 5 seconds from the timer in the top right corner of the screen. If the timer hits 0 or when all the questions have been answered, the quiz will redirect to the form submit screen.
+
+![Initial and Submit Screen](assets/images/FormSub.png)
+
+Click on the submit button to enter your initials into the webpage. The webpage will store the data until the browser has been exited.
+
+If it the first time taking the quiz, the footer will update from "Take the quiz to get a Score" to the initials of the last high score holder's initials and the current high score.
+
+![High Score update](assets/images/FormSub.png)
+
+Click the replay button to refresh the quiz.
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+N/A
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+MIT License. Please refer to the LICENSE in the repo.
 
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-## Features
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.

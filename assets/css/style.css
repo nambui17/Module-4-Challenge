@@ -104,6 +104,7 @@ h2 {
 
 #start:hover {
     cursor: pointer;
+    background-color: var(--hoverchoice);
 }
 
 section button {
