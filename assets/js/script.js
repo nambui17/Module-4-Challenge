@@ -17,6 +17,10 @@ var button= document.createElement("button");
 var replay = document.querySelector("#replay-nd");
 var highScoreList= document.querySelector("#high-score-list");
 var timeLeft= 120;
+var highScore= {
+    high: 0,
+    initials: "",
+}
 
 var questions = {
     0: "HTML is used to describe the _________ of webpages.",
@@ -140,7 +144,6 @@ function choiceclick() {
         timeLeft=1;
         endGame();
     }
-    console.log(score);
 }
 
 q1.addEventListener("click", function(event) {
@@ -209,11 +212,9 @@ replay.addEventListener("click", function(event) {
 
 endSub.addEventListener("click", function(event) {
     event.preventDefault();
-    var highScore= {
-        high: 0,
-        initials: endIni.value,
-    }
-    if (score>highScore.high) {
+    debugger
+    console.log(highScore.initials);
+    if (score >= highScore.high) {
         highScore.initials = endIni.value;
         highScore.high = score;
     }
@@ -223,8 +224,10 @@ endSub.addEventListener("click", function(event) {
 
 function renderHigh() {
     var lastHigh = JSON.parse(localStorage.getItem("highScore"));
-    if (lastHigh !== null) {
+    if (lastHigh !== null && lastHigh.initials !== "") {
         highScoreList.textContent = lastHigh.initials + " currently has the high score of " + lastHigh.high;
+    } else if (lastHigh.initials=="") {
+        highScoreList.textContent = "Please Submit your initials to save your score!";
     } else {
         highScoreList.textContent = "Take the quiz to get a Score!";
     }
