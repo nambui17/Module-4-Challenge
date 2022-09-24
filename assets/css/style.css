@@ -65,15 +65,14 @@ h2 {
     display:flex;
     flex: 1 1 100%;
     justify-content: center;
-}
-
-section ul {
-    display:flex;
-    flex: 1 1 50%;
     flex-flow: wrap;
 }
 
-section ul b {
+#start:hover {
+    cursor: pointer;
+}
+
+section button {
     display: flex;
     padding: 10px 20px 10px 20px;
     width: 150px;
@@ -82,6 +81,53 @@ section ul b {
     justify-content: center;
     border-radius: 20px;
     flex: 1 1 50%;
+    max-width: 50%;
     color: var(--choicetextcolor);
     background-color: var(--questionboxcolor);
+    font-size: 36px;
+}
+
+section ul {
+    display:flex;
+    flex: 1 1 100%;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.question-no-display {
+    display: none;
+}
+
+.question-choices {
+    display: flex;
+    font-size: 24px;
+    flex: 1 1 50%;
+}
+
+.question-choices:hover {
+    cursor: pointer;
+}
+
+#replay-nd {
+    display:none;
+}
+
+#replay {
+    display: flex;
+}
+
+#replay:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+    
 }
