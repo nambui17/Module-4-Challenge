@@ -20,13 +20,15 @@
 <body>
     <!--Header box with nav links for view high scores, and timer-->
     <header>
-        <a>View High Scores</a>
+        <a href="#high-score-list">View High Scores</a>
         <h1 id="titletext">JavaScript Quiz</h1>
-        <section id="timer">Time Left: </section>
+        <section id="timer">Time Remaining: </section>
     </header>
     <!--Box to contain questions-->
     <main>
-        <h2 id="questiontext">Press Start to begin the JavaScript Quiz!</h1>
+        <h2 id="questiontext">Press Start to begin the JavaScript Quiz!</h2>
+        <input type="text" class="form" id="initials" placeholder="Initials">
+        <input type="submit" class="form" id="submit">
         <!--Section for multiple choice-->
         <section id="choicebox">
             <button type="button" id="start">Start</button>
@@ -36,10 +38,12 @@
                 <button type="button" class="question-no-display" id="question-3"></button>
                 <button type="button" class="question-no-display" id="question-4"></button>
                 <button type="button" id="replay-nd">Click Here to Replay</button>
+                <section id="endgame"></section>
             </ul>
         </section>
+        <section id="foot"></section>
     </main>
-
+    <footer id="high-score-list"></footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
