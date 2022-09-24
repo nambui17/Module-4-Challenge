@@ -34,7 +34,6 @@ header {
     flex: 1 1 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 100px;
 }
 
 header a {
@@ -184,13 +183,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-}
+    header h1 {
+        flex: 1 1 100%
+    }
 
-@media screen and (max-width: 992px) {
-    
-}
-
-@media screen and (max-width: 1200px) {
-    
+    header a {
+        font-size: 18px;
+    }
 }
