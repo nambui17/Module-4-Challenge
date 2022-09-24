@@ -212,7 +212,6 @@ replay.addEventListener("click", function(event) {
 
 endSub.addEventListener("click", function(event) {
     event.preventDefault();
-    console.log(highScore.initials);
     if (score >= highScore.high) {
         highScore.initials = endIni.value;
         highScore.high = score;
